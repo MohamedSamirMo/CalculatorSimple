@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="@dimen/_10sdp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:text="@string/Zero"
+        android:textSize="@dimen/_50sdp"
+        android:paddingHorizontal="@dimen/_7sdp"
+        android:paddingVertical="@dimen/_17sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:paddingTop="@dimen/_80sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="@+id/screen"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <LinearLayout
+            android:paddingTop="@dimen/_80sdp"
+            android:layout_alignParentTop="@+id/screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/_6sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/on"
+                    style="@style/Button1"
+                    android:text="@string/on" />
+
+                <Button
+                    android:id="@+id/number7"
+                    style="@style/Button2"
+                    android:text="@string/seven" />
+
+                <Button
+                    android:id="@+id/number4"
+                    style="@style/Button2"
+                    android:text="@string/four" />
+
+                <Button
+                    android:id="@+id/number1"
+                    style="@style/Button2"
+                    android:text="@string/one" />
+
+                <Button
+                    android:id="@+id/delete"
+                    style="@style/Button1"
+                    android:text="@string/delete" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/off"
+                    style="@style/Button1"
+                    android:text="@string/off" />
+
+                <Button
+                    android:id="@+id/number8"
+                    style="@style/Button2"
+                    android:text="@string/eight" />
+
+                <Button
+                    android:id="@+id/number5"
+                    style="@style/Button2"
+                    android:text="@string/five" />
+
+                <Button
+                    android:id="@+id/number2"
+                    style="@style/Button2"
+                    android:text="@string/two" />
+
+                <Button
+                    android:id="@+id/number0"
+                    style="@style/Button2"
+                    android:text="@string/zero" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/ac"
+                    style="@style/Button1"
+                    android:text="@string/ac" />
+
+                <Button
+                    android:id="@+id/number9"
+                    style="@style/Button2"
+                    android:text="@string/nine" />
+
+                <Button
+                    android:id="@+id/number6"
+                    style="@style/Button2"
+                    android:text="@string/six" />
+
+                <Button
+                    android:id="@+id/number3"
+                    style="@style/Button2"
+                    android:text="@string/three" />
+
+                <Button
+                    android:id="@+id/point"
+                    style="@style/Button2"
+                    android:text="@string/point" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/div"
+                    style="@style/Button1"
+                    android:text="@string/div" />
+
+                <Button
+                    android:id="@+id/times"
+                    style="@style/Button1"
+                    android:text="@string/times" />
+
+                <Button
+                    android:id="@+id/min"
+                    style="@style/Button1"
+                    android:text="@string/min" />
+
+                <Button
+                    android:id="@+id/plus"
+                    style="@style/Button1"
+                    android:text="@string/plus" />
+
+                <Button
+                    android:id="@+id/equal"
+                    style="@style/Button1"
+                    android:text="@string/equal" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
